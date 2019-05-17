@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nurselogin"
+    android:orientation="vertical"
+    android:background="@drawable/hospital"
+    android:gravity="center"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NURSE LOGIN"
+        android:textColor="#000"
+        android:textSize="60dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter email"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:background="@drawable/email"
+        android:padding="10dp"
+        android:id="@+id/email_et"
+        android:fontFamily="casual"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter password"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/email"
+        android:padding="10dp"
+        android:id="@+id/password_et"
+        android:fontFamily="casual"
+        android:maxLines="1"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="log in"
+        android:textSize="40dp"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/email"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:onClick="openlogin"
+        android:fontFamily="cursive"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="forgot password"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:onClick="openforget"
+        android:fontFamily="casual"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="new user?"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:onClick="opensignup2"
+        android:fontFamily="casual"/>
+
+
+
+</LinearLayout>

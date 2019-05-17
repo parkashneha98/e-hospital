@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewstaff"
+    android:background="@drawable/hospital"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#344B4949">
+
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIEW STAFF"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/staff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="cursive"
+        android:layout_marginBottom="90dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/staff"
+       >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="doctor list"
+                android:textSize="35dp"
+                android:textStyle="italic"
+                android:layout_marginBottom="40dp"
+                android:onClick="doctor1"
+                android:background="@drawable/email"
+                android:padding="10dp"
+                android:id="@+id/doc"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="casual"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nurse list"
+                android:textSize="35dp"
+                android:textStyle="italic"
+                android:onClick="nurse1"
+                android:background="@drawable/email"
+                android:padding="10dp"
+                android:id="@+id/nurse"
+                android:layout_below="@+id/doc"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="casual"/>
+</RelativeLayout>
+
+</ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addmedicine"
+    android:background="@drawable/hospital"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#344B4949">
+
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD MEDICINE"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/add_medicine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="cursive"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/add_medicine">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" medicine name"
+                android:textColorHint="#000"
+                android:layout_marginTop="70dp"
+                android:id="@+id/medicinename_et"
+                android:background="@drawable/email"
+                android:textSize="30dp"
+                android:padding="10dp"
+                android:fontFamily="casual"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="salt name"
+                android:textColorHint="#000"
+                android:layout_marginTop="30dp"
+                android:id="@+id/saltname_et"
+                android:layout_below="@id/medicinename_et"
+                android:background="@drawable/email"
+                android:textSize="30dp"
+                android:padding="10dp"
+                android:fontFamily="casual"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="price"
+                android:textColorHint="#000"
+                android:layout_marginTop="30dp"
+                android:id="@+id/price_et"
+                android:layout_below="@id/saltname_et"
+                android:background="@drawable/email"
+                android:textSize="30dp"
+                android:padding="10dp"
+                android:fontFamily="casual"
+
+                />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:textSize="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/email"
+        android:textColor="#000"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@+id/price_et"
+        android:onClick="add_medicine"
+        android:fontFamily="cursive">
+
+    </Button>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+       </RelativeLayout>
+
+

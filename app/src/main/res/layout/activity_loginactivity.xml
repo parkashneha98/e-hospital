@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctorloginactivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/hospital"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOCTOR LOGIN"
+        android:textColor="#000"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="cursive"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter email"
+        android:textColorHint="#000"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/email"
+        android:padding="10dp"
+        android:id="@+id/email_et"
+        android:fontFamily="casual"
+        android:maxLines="1"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter password"
+        android:textColorHint="#000"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:background="@drawable/email"
+        android:padding="10dp"
+        android:id="@+id/password1_et"
+        android:fontFamily="casual"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="log in"
+        android:textSize="40dp"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/email"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:onClick="opendoctorlogin"
+        android:fontFamily="cursive"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="forgot password"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:onClick="openforgetdoc"
+        android:fontFamily="casual"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="new user?"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:onClick="opensignup"
+        android:fontFamily="casual"/>
+
+</LinearLayout>

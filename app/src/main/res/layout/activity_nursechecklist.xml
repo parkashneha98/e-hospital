@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nursechecklist"
+    android:background="@drawable/hospital"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient daily Checklist"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/check_list"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="cursive"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/check_list">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/card_check"
+                android:layout_marginTop="70dp"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:background="#E7C8D3">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="patient name"
+                            android:textColorHint="#000"
+                            android:id="@+id/pname_et"
+                            android:fontFamily="casual"
+                            android:maxLines="1"
+
+                            />
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="20dp">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="email id"
+                            android:id="@+id/check_id_et"
+                            android:fontFamily="casual"
+                            android:maxLines="1"
+
+                            android:textColorHint="#000"/>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:layout_below="@id/card_check"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/card_check2"
+                android:padding="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:background="#ECC5D3">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/bp_pt"
+                            android:text="blood pressure"
+                            android:textSize="30dp"
+                            android:textColor="#000"
+                            android:fontFamily="casual"
+                            android:textStyle="bold"
+                            />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="note upper bp....."
+                            android:maxLines="1"
+                            android:layout_marginTop="40dp"
+                            android:textColorHint="#000"
+                            android:fontFamily="casual"
+                            android:id="@+id/notify_up"/>
+
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="note lower bp......"
+                            android:layout_below="@+id/notify_up"
+                            android:textColorHint="#000"
+                            android:maxLines="1"
+                            android:fontFamily="casual"
+                            android:id="@+id/notify_low"/>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:layout_below="@id/card_check2"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/card_check3"
+                android:padding="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:background="#ECC5D3">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/body_tem"
+                            android:text="body temperature"
+                            android:textSize="27dp"
+                            android:textColor="#000"
+                            android:fontFamily="casual"
+                            android:textStyle="bold"
+                            />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="note temperature...."
+                            android:layout_marginTop="30dp"
+                            android:textColorHint="#000"
+                            android:fontFamily="casual"
+                            android:id="@+id/note_tem"
+                            android:maxLines="1"/>
+
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:layout_below="@id/card_check3"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/card_check4"
+                android:padding="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:background="#ECC5D3">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/med_dos"
+                            android:text="medicine dosage"
+                            android:textSize="30dp"
+                            android:textColor="#000"
+                            android:fontFamily="casual"
+                            android:textStyle="bold"
+                            />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="morning"
+                            android:checked="false"
+                            android:layout_below="@+id/med_dos"
+                            android:id="@+id/morn_dos"/>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="afternoon"
+                            android:checked="false"
+                            android:layout_below="@+id/morn_dos"
+                            android:id="@+id/noon_dos"/>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="evening"
+                            android:checked="false"
+                            android:layout_below="@+id/noon_dos"
+                            android:id="@+id/eve_dos"
+                            />
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="note other....."
+                            android:layout_marginTop="10dp"
+                            android:textColorHint="#000"
+                            android:fontFamily="casual"
+                            android:layout_below="@+id/eve_dos"
+                            android:maxLines="2"/>
+
+
+
+
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:layout_below="@id/card_check4"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/card_check5"
+                android:padding="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:background="#ECC5D3">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/meal_et"
+                            android:text="Meals"
+                            android:textSize="30dp"
+                            android:textColor="#000"
+                            android:fontFamily="casual"
+                            android:textStyle="bold"
+                            />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="morning"
+                            android:checked="false"
+                            android:layout_below="@+id/meal_et"
+                            android:id="@+id/morn_meal"/>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="afternoon"
+                            android:checked="false"
+                            android:layout_below="@+id/morn_meal"
+                            android:id="@+id/noon_meal"/>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="evening"
+                            android:checked="false"
+                            android:layout_below="@+id/noon_meal"
+                            android:id="@+id/eve_meal"
+                            />
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="note other....."
+                            android:layout_marginTop="10dp"
+                            android:textColorHint="#000"
+                            android:fontFamily="casual"
+                            android:layout_below="@+id/eve_meal"
+                            android:maxLines="2"/>
+
+
+
+
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                android:textColor="#000"
+                android:onClick="save_checklist"
+                android:textSize="30dp"
+                android:padding="5dp"
+                android:background="@drawable/email"
+                android:layout_below="@id/card_check5"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="cursive"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

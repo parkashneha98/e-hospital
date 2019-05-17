@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.firebase">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/elogo"
+        android:label="e-hospital"
+    tools:replace="android:label"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme2">
+        <activity android:name=".viewinpatientlist"></activity>
+        <activity android:name=".addinpatient" />
+        <activity android:name=".editnurseprofile" />
+        <activity android:name=".editprofiledoctor" />
+        <activity android:name=".addnursecolleague" />
+        <activity android:name=".adddoctorcolleague" />
+        <activity android:name=".add_stafflist" />
+        <activity android:name=".forgotpassword" />
+        <activity android:name=".userdoc" />
+        <activity android:name=".chat.NurseUsers$usersdoc" />
+        <activity android:name=".chat.doctorchat" />
+        <activity android:name=".patienthistory" />
+        <activity android:name=".nursechecklist" />
+        <activity android:name=".changepassword" />
+        <activity android:name=".viewmedicinelist" />
+        <activity android:name=".viewappointment" />
+        <activity android:name=".addappointment" />
+        <activity android:name=".medicinelist" />
+        <activity android:name=".nurselist" />
+        <activity android:name=".doctorlist" />
+        <activity android:name=".viewstaff" />
+        <activity android:name=".addmedicine" />
+        <activity android:name=".chat.Chat" />
+        <activity android:name=".addpatient" />
+        <activity
+            android:name=".nursehomepage"
+            android:label="@string/title_activity_nursehomepage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".doctorhomepage"
+            android:label="@string/title_activity_doctorhomepage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".nurseinfo" />
+        <activity android:name=".nurselogin" />
+        <activity android:name=".nursesignup" />
+        <activity android:name=".SaveDoctorInfo" />
+        <activity android:name=".Doctorloginactivity" />
+        <activity android:name=".registeractivity" />
+        <activity android:name=".splashactivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DoctorSignup" />
+        <activity android:name=".chat.NurseUsers" />
+    </application>
+
+</manifest>

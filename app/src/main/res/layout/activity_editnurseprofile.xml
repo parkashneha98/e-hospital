@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editnurseprofile"
+    android:background="@drawable/hospital"
+    android:orientation="vertical"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/doctor"
+        android:id="@+id/nurse_profilephoto"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nurse Info"
+        android:textSize="50dp"
+        android:fontFamily="cursive"
+        android:textColor="#000"
+        android:id="@+id/doctor_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/nurse_profilephoto"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/doctor_profile">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="name"
+                android:textColorHint="#000"
+                android:layout_marginTop="40dp"
+                android:id="@+id/namenur_et"
+                android:fontFamily="casual"
+                android:background="@drawable/email"
+                android:padding="10dp"
+
+
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="email"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:id="@+id/emailnur_et"
+                android:layout_below="@id/namenur_et"
+                android:fontFamily="casual"
+                android:background="@drawable/email"
+                android:padding="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="area of interest"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:id="@+id/aoinur_et"
+                android:layout_below="@id/emailnur_et"
+                android:fontFamily="casual"
+                android:background="@drawable/email"
+                android:padding="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="education"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:id="@+id/educnur_et"
+                android:layout_below="@id/aoinur_et"
+                android:fontFamily="casual"
+                android:background="@drawable/email"
+                android:padding="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="experience"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:id="@+id/experiencenur_et"
+                android:layout_below="@id/educnur_et"
+                android:fontFamily="casual"
+                android:background="@drawable/email"
+                android:padding="10dp"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="speciality"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:id="@+id/specialnur_et"
+                android:layout_below="@id/experiencenur_et"
+                android:fontFamily="casual"
+                android:background="@drawable/email"
+                android:padding="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="mobile no"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:id="@+id/mobilenur_et"
+                android:layout_below="@id/specialnur_et"
+                android:fontFamily="casual"
+                android:background="@drawable/email"
+                android:padding="10dp"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="working hours"
+                android:textColorHint="#000"
+                android:layout_marginTop="10dp"
+                android:id="@+id/hoursnur_et"
+                android:layout_below="@id/mobilenur_et"
+                android:fontFamily="casual"
+                android:background="@drawable/email"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPDATE PROFILE"
+                android:textColor="#000"
+                android:onClick="update_profilenurse"
+                android:textSize="30dp"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/email"
+                android:layout_below="@id/hoursnur_et"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="cursive"
+
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registeractivity"
+    android:background="@drawable/hospital"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE AS"
+        android:textSize="50dp"
+        android:textColor="#000"
+       android:fontFamily="cursive"
+        android:layout_marginBottom="70dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="doctor"
+        android:textSize="40dp"
+        android:textColor="#000"
+       android:fontFamily="casual"
+        android:layout_marginBottom="40dp"
+        android:onClick="doctor"
+        android:background="@drawable/email"
+        android:padding="10dp"
+        />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="nurse"
+    android:textSize="40dp"
+   android:fontFamily="casual"
+    android:textColor="#000"
+    android:onClick="nurse"
+    android:background="@drawable/email"
+    android:padding="10dp"/>
+</LinearLayout>
